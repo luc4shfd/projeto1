@@ -9,11 +9,20 @@ app.get("/",(req, res) => {
     var nome ="lucas Henrique";
     var lang = "javaScript";
     var msg = false;
+
+
+    var produtos = [
+        {nome: "melancia", preco:"5"},
+        {nome: "uva", preco:"2.50"},
+        {nome: "maça", preco:"3"}
+    ]
+
     res.render("index",{
         nome: nome,
         lang: lang,
         empresa: "Jacto SA",
-        msg: msg
+        msg: msg,
+        produtos: produtos
     });
 });
 
