@@ -8,5 +8,13 @@
 <body>
     <h1>Guia de perguntas!</h1>
     <h2>Bem vindo <%= nome %> </h2>
+
+    <% if(msg == true){  %>
+        <h3>Houve um erro!!</h3>
+    <%}else{%>
+        <h3>tudo normal</h3>
+    <%}%>
+
+
 </body>
 </html>

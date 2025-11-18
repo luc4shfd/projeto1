@@ -8,10 +8,12 @@ app.set('view engine', 'ejs');
 app.get("/",(req, res) => {
     var nome ="lucas Henrique";
     var lang = "javaScript";
+    var msg = false;
     res.render("index",{
         nome: nome,
         lang: lang,
-        empresa: "Jacto SA"
+        empresa: "Jacto SA",
+        msg: msg
     });
 });
 
