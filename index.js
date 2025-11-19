@@ -12,6 +12,11 @@ res.render("index");
 });
 
 
+app.get("/perguntar",(req, res)=>{
+    res.render("perguntar")
+})
+
+
 
 app.listen(4000,() =>{
     console.log("app rodando!")
