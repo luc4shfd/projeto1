@@ -26,7 +26,13 @@ app.use(bodyParser.json());
 
 app.get("/",(req, res) => {
     
-res.render("index");
+    pergunta.findAll({raw: true }).then(perguntas => {
+        res.render("index", {
+            perguntas: perguntas
+        });
+    })
+
+    
 });
 
 
